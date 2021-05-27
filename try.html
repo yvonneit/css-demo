@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div id="title">Hello world</div>
+      <div id="passages">
+        China is speeding up strategic plan, standards, traffic rules, laws and
+        regulations on accident-incurred liabilities for its smart car industry,
+        Economic Information Daily reported Thursday.
+      </div>
+    </header>
+
+    <section>
+      <div id="second">
+        <div>BOATLOADS OF AWESOME</div>
+        <div>
+          Ready-made, customizable, HTML
+          <br />landing page sections
+        </div>
+        <div id="info">
+          <div class="item1">
+            <div id="phone">
+              <img src="img/Iphone Icon.png" />
+              <h1>Mobile First</h1>
+              <p>
+                This scenario might have seemed more likely in the universe
+                imagined by Aristotle and Ptolemy.
+              </p>
+            </div>
+            <div id="check">
+              <img src="img/Check Icon.png" />
+              <h1>Accessibility</h1>
+              <p>
+                Today they estimate as many as 500 billion billion sunlike
+                stars, with 100 billion billion Earthlike planets.
+              </p>
+            </div>
+          </div>
+          <div class="item2">
+            <div id="pencil">
+              <img src="img/Pencil Icon.png" />
+              <h1>Fluid Typography</h1>
+              <p>
+                The more we learn about the universe, the more absurd it would
+                seem if all but one of those bodies were bereft of life.
+              </p>
+            </div>
+            <div id="setting">
+              <img src="img/Settings Icon.png" />
+              <h1>Customization</h1>
+              <p>
+                Maybe humanity is still so basic and primitive that advanced
+                civilizations don’t think we’re worth talking to.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="third">
+      <div>
+        <div id="supportive">
+          <h1>
+            Supportive policies for <br />
+            China's smart car
+          </h1>
+          <br />
+          <p>
+            Fermi wasn’t the first person to ask a variant of this question
+            about alien intelligence. But he owns it. The query is known around
+            the world as the Fermi paradox. It’s typically summarized like this:
+            If the universe is unfathomably large, the probability of
+            intelligent alien life seems almost certain.
+          </p>
+          <br />
+          <br />
+          <button id="button1">CHECK OUR FEATURES</button>
+          <button id="button2">TRY PRODUCT FOR FREE</button>
+        </div>
+        <div id="ipad">
+          <img src="img/IPad.png" />
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
+
+<style>
+  /* 用通配符 * 匹配页面上所有元素重置浏览器默认样式，方便自定义样式 */
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: 'Microsoft Yahei', sans-serif;
+  }
+
+  header {
+    /* 设置文本粗细 */
+    font-weight: lighter;
+    background-image: url(img/Background.png);
+    color: white;
+    width: 100%;
+    height: 990px;
+    /* 设置文字居中 */
+    text-align: center;
+  }
+
+  #title {
+    /* 设置当前 div 为行内块元素 */
+    display: inline-block;
+    margin-top: 200px;
+    font-size: 64px;
+  }
+
+  #passages {
+    padding: 100px 25% 70px 25%;
+    font-size: 20px;
+    color: #bfbfbf;
+  }
+
+  section {
+    width: 100%;
+    text-align: center;
+  }
+
+  #second {
+    height: 700px;
+  }
+
+  /* 选择 id 为 second 下的第一个 div 元素 */
+  #second > div:nth-child(1) {
+    display: inline-block;
+    margin-top: 120px;
+  }
+
+  #second > div:nth-child(2) {
+    margin-top: 60px;
+    font-size: 48px;
+    height: 170px;
+    font-weight: lighter;
+  }
+
+  #info {
+    height: 450px;
+    width: 80%;
+    /* 当前 div 水平居中 */
+    margin: 0px auto;
+    margin-top: 50px;
+  }
+
+  .item1,
+  .item2 {
+    /* flex 水平垂直居中布局 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    padding-bottom: 20px;
+  }
+
+  #phone,
+  #check,
+  #pencil,
+  #setting {
+    width: 40%;
+  }
+
+  #check,
+  #setting {
+    margin-left: 30px;
+  }
+
+  #third {
+    margin-top: 100px;
+    height: 750px;
+    /*图片路径不能有空格*/
+    background-image: url(img/Background2.png);
+    text-align: left;
+    color: white;
+    font-weight: lighter;
+  }
+
+  #supportive {
+    width: 32%;
+    height: 430px;
+    float: left;
+    padding: 150px 0 0 10%;
+  }
+
+  #supportive h1 {
+    font-size: 40px;
+    font-weight: lighter;
+  }
+
+  #supportive p {
+    font-size: 18px;
+    color: black;
+  }
+
+  #supportive button {
+    width: 50%;
+    height: 50px;
+    text-align: center;
+    margin-bottom: 10px;
+    /* 设置元素的外边框圆角 */
+    border-radius: 5px;
+    border: 1px solid black;
+  }
+
+  #button1 {
+    background: white;
+  }
+
+  #button2 {
+    background: rgb(0, 0, 0, 0);
+    color: white;
+  }
+
+  #ipad {
+    width: 50%;
+    height: 100%;
+    float: right;
+    margin-top: 75px;
+  }
+</style>
